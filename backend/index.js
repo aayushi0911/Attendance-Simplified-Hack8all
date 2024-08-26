@@ -19,9 +19,10 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Configuration from environment variables
-const client_id = "Z8HyyhbzGVSIpJ1to9q9RMR2SRPgZve6P90locQD";
+// connection and auth is working with valid id and secret
+const client_id = "client_id";
 const client_secret =
-  "9XkaESUebdHoW5RsxRBt54fSKrJXOlT1nXIbLltB480zPJdiSwq5GtygojHzd5Rm4FFecxL3STW4OdD16UJWE4WipuQHc7VRuA7V1aNqkizcAbnWriRX8uMu6PU9wjyz";
+  "client_secret";
 const redirect_uri = "http://localhost:3000/oauth/authorise";
 const oauth_provider_base_url = "https://channeli.in";
 const state = "gjfthd";
@@ -105,8 +106,9 @@ app.get("/oauth/authorise", async (req, res) => {
 });
 
 // MongoDB Connection
+// password and username should not go public but some valid uri must be added
 mongoose.connect(
-  "mongodb+srv://milins2710:milinsocin32@socin.mmlzaer.mongodb.net/caffeinecoderz"
+  "mongodb+srv://<username>:<password>@socin.mmlzaer.mongodb.net/caffeinecoderz"
 );
 
 // Set up multer for file upload handling
