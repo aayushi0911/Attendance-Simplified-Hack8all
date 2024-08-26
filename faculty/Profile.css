@@ -1,0 +1,94 @@
+/* src/faculty/Profile.css */
+
+/* General page styling */
+.profile-page {
+  background-color:teal; /* Light beige background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* General container styling */
+.profile-container {
+  background-color: #fff; /* White background for profile container */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile picture styling */
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 0%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Text styling */
+.profile-info h2 {
+  color: #00796b; /* Dark teal for text */
+  transition: color 0.3s ease;
+}
+
+.profile-info h2:hover {
+  color: #004d40; /* Darker teal on hover */
+}
+
+/* Button styling */
+.btn-custom {
+  background-color: #00796b; /* Teal background for buttons */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding: 15px;
+  animation: bounceIn 1s ease-out;
+}
+
+.btn-custom:hover {
+  background-color: #004d40; /* Darker teal on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-custom:focus {
+  outline: none;
+}
+
+/* Keyframes for bounceIn animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

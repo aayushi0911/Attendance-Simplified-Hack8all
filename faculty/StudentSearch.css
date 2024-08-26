@@ -1,0 +1,17 @@
+/* src/faculty/StudentSearch.css */
+
+.search-container {
+  background-color: #f8f9fa; /* Light background for the search page */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-results .list-group-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-results .list-group-item:hover {
+  background-color: #e0f2f1; /* Light teal background on hover */
+}
