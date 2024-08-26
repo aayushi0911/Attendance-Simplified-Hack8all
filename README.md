@@ -33,19 +33,13 @@ cd project-name
 
 The frontend is developed using **React.js** and **Bootstrap**:
 
-1. **Navigate to the frontend directory:**
-
-   ```bash
-   cd frontend
-   ```
-
-2. **Install dependencies:**
+1. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-3. **Start the development server:**
+2. **Start the development server:**
 
    ```bash
    npm start
