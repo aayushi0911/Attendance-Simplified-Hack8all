@@ -125,12 +125,8 @@ The ML component uses **PyTorch** for facial recognition. Follow these steps:
 
 ### **ML Details**
 
-- **Source Data**: Facial images are embedded into the database.
-- **Model Training**: YOLO v5 is used for face detection; FaceNet generates embeddings from detected faces.
-- **Face Matching**: Euclidean distance is utilized to find the best match from the embeddings.
-- **Thresholds**: Adjustments are made to improve recognition accuracy, and a separate CNN model was trained to address runtime errors and enhance facial recognition performance.
-
-**Model and Dataset Files:**
+- **model**: vector embeddings are taken from the source database. then for checking we use yolov5 to detect faces and the used dlib for alignment and to get the embeddings out of the test img we used facenet and then implied eucledian distance to find the best match. but as we tried including threshold into the algo we ran into pretained errors.
+- **Model Training**: so we train a new VGG19 model based  convolutional neural network (CNN) architecture at last. The "19" in VGG19 refers to the total number of layers in the network, which includes 16 convolutional layers and 3 fully connected layers.The original VGG19 model was trained on ImageNet, so it outputs probabilities across 1,000 different classes.The model typically takes an input image of size 224x224 with three color channels (RGB).
 
 - **Face Recognition Model**: [Model Link](https://colab.research.google.com/drive/1NWVkfVhQEDpcPFvKWXasPfq-alJkvEYQ?usp=sharing)
 - **Files for Dataset Creation**: [Dataset Files Link](https://colab.research.google.com/drive/1NWVkfVhQEDpcPFvKWXasPfq-alJkvEYQ?usp=sharing)
